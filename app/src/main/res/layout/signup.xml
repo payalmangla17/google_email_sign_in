@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4781AF"
+    android:id="@+id/l2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="193dp"
+            android:layout_height="134dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/music" />
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/sGoogle"
+            android:layout_below="@id/img"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:text="Sign up with Google" />
+
+        <TextView
+            android:id="@+id/sor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sGoogle"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="or"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+        <!--   <EditText
+        android:id="@+id/suname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sor"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/colorAccent"
+        android:hint="Username"
+        />-->
+        <EditText
+            android:id="@+id/suemail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/sor"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_et"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/spwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/round_et"
+            android:layout_below="@id/suemail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Password"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spwd"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/btnstyle"
+            android:text="Create Account" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginBottom="22dp"
+            android:text="Already have an account?"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/signin"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="22dp"
+            android:layout_toRightOf="@id/text"
+            android:text="  Log in"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>

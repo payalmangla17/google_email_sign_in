@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#4691B5"
+    android:layout_weight="1"
+    tools:context=".loginn">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="193dp"
+        android:layout_height="134dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_et"
+
+        android:src="@drawable/music" />
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+        android:id="@+id/Google"
+        android:layout_below="@id/img"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:text="Sign up with Google" />
+
+    <!--  <Button
+          android:id="@+id/Facebook"
+          android:layout_width="150dp"
+          android:layout_toRightOf="@id/Google"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="150dp"
+          android:text="Log in with Facebook"
+          />-->
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="------------or------------"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Google"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/or"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:background="@drawable/round_et"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/uname"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_et"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pwd"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Log in"
+        android:background="@drawable/btnstyle"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/text1"
+        android:textSize="17sp"
+        android:layout_marginBottom="22dp"
+        android:text="No account yet? "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:id="@+id/createacc"
+        android:layout_toRightOf="@id/text1"
+        android:layout_marginBottom="22dp"
+        android:text="Create Account"
+        />
+
+
+
+</RelativeLayout>
+
